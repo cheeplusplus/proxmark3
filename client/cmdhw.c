@@ -688,7 +688,7 @@ void pm3_version(bool verbose, bool oneliner) {
 
     if (oneliner) {
         // For "proxmark3 -v", simple printf, avoid logging
-        printf("Client: RRG/Iceman compiled with " PM3CLIENTCOMPILER __VERSION__ PM3HOSTOS PM3HOSTARCH "\n");
+        printf("Client: RRG/Iceman/chee++ compiled with " PM3CLIENTCOMPILER __VERSION__ PM3HOSTOS PM3HOSTARCH "\n");
         return;
     }
 
@@ -703,7 +703,7 @@ void pm3_version(bool verbose, bool oneliner) {
     if (WaitForResponseTimeout(CMD_VERSION, &resp, 1000)) {
         PrintAndLogEx(NORMAL, "\n " _YELLOW_("[ Proxmark3 RFID instrument ]"));
         PrintAndLogEx(NORMAL, "\n " _YELLOW_("[ CLIENT ]"));
-        PrintAndLogEx(NORMAL, "  client: RRG/Iceman"); // TODO version info?
+        PrintAndLogEx(NORMAL, "  client: RRG/Iceman/chee++"); // TODO version info?
         PrintAndLogEx(NORMAL, "  compiled with " PM3CLIENTCOMPILER __VERSION__ PM3HOSTOS PM3HOSTARCH);
 
         if (IfPm3Flash() == false && IfPm3Smartcard() == false && IfPm3FpcUsartHost() == false) {

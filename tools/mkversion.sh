@@ -9,7 +9,7 @@ export LC_ALL="C"
 export LANG="C"
 
 # if you are making your own fork,  change this line to reflect your fork-name
-fullgitinfo="RRG/Iceman"
+fullgitinfo="RRG/Iceman/chee++"
 # GIT status  0 = dirty,  1 = clean ,  2 = undecided
 clean=2
 
